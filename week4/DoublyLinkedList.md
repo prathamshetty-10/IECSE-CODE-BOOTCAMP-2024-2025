@@ -1,6 +1,7 @@
 ### Doubly Linked list
+![image](https://github.com/user-attachments/assets/46e0c77e-e88c-4f0d-b3ad-20e580e1e2f9)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a842fed-5ca6-49c9-8798-b6ab070c2c58/37e2d95d-f63a-44e1-abc0-88635fcb08fb/image.png)
+
 
 ```c
 #include <stdio.h>
