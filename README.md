@@ -1,54 +1,52 @@
+# Stack Fundamentals
+A stack is a linear data structure following Last In First Out (LIFO) principles. Elements are added/removed from one end (top). Analogy: A stack of plates.
 
-# IECSE Code Bootcamp 2024-25 
+# Core Operations
+- `Push`: Add an element to the top.
 
-Welcome to the IECSE Code Bootcamp 2024-25 repository! This bootcamp is designed to build a solid foundation in data structures, algorithms, and advanced problem-solving over 11 weeks. Through weekly content and challenges, participants will enhance their coding skills and prepare for real-world scenarios and competitive coding.
+- `Pop`: Remove the top element.
 
-# 🛠️ Topics Covered
-Over 11 weeks, we’ll explore the following topics in depth:
+- `Peek/Top`: Return the top element without removal.
 
-- Basics + STL + Sorting Algorithms 
-- Arrays 
-- Strings and Binary Search 
-- Linked Lists 
-- Recursion 
-- Stacks 
-- Queues 
-- Binary Trees 
-- Binary Search Trees 
-- Graphs 
-- Dynamic Programming 
+- `isEmpty`: Check if the stack has no elements.
 
-Each topic includes:
-- Theoretical Concepts: Tutorials and detailed explanations
-- Practice Problems: Curated challenges to solidify your learning
-- YouTube Links: Links to good yt content. 
+- `isFull`: Check if the stack has reached capacity (array-based).
 
-# 📝 Access and Eligibility
-This repository is exclusively accessible to:
+# Implementation Variants
+1. Array-based
+    - Pros: Cache-friendly (contiguous memory), minimal overhead.
 
-- Members of IECSE 
-- Working Committee Members of IECSE
-- Managing Committee Members of IECSE.
+    - Cons: Fixed size (static arrays), costly resizing (dynamic arrays).
 
-# 🌟 Weekly Content Structure
-Each Week Includes: 
-- Learning Resources: Tutorials and guides for the topic.
--  Coding Challenges: Problem sets to solve.
-# 🎯 Goals of the Bootcamp 
-- Strengthen core programming fundamentals. 
-- Develop problem-solving and algorithmic thinking. 
-- Build collaborative coding skills. 
-- Prepare for technical interviews and competitive programming.
-#🚀 Let’s Begin! 
-Gear up for an exciting journey to coding excellence. Let’s learn, build, and grow together in the IECSE Code Bootcamp 2024-25!
+    - Overflow risk if capacity is exceeded.
 
-# Team IECSE
+2. Linked List-based
+    - Pros: Dynamic sizing, no overflow (until memory exhaustion).
 
+    - Cons: Pointer overhead, poor cache locality.
 
+# Role in Recursion
+- **Call Stack Management:** Each recursive call creates a stack frame storing parameters, local variables, and return addresses.
 
+- **Execution Context:** The system stack ensures nested function calls return correctly. Without stacks, recursion would fail due to lost context.
 
+- *Example:*   
+Factorial calculation. Each recursive call pushes a frame; returns unwind the stack.
 
+# Key Applications
+- **Function Call Management**: Tracks nested/recursive calls (e.g., main() → func1() → func2()).
 
+- **Expression Evaluation**: Parses arithmetic/parentheses (e.g., converting infix to postfix).
 
+- **Undo/Redo Mechanisms**: Each action is pushed; undo pops the last action.
 
+- **Backtracking Algorithms**: Maze-solving via trial-and-error (push paths; pop on dead ends).
 
+- **Compiler Design**: Syntax validation (e.g., matching braces).
+
+# Why Stacks Matter
+- **Memory Efficiency:** Automatically allocates/deallocates temporary data (e.g., local variables).
+
+- **Algorithmic Foundation:** Critical for DFS (Depth-First Search), tree traversals, and parsing.
+
+- **System-Level Relevance:** CPU architectures use hardware stacks for interrupt handling
