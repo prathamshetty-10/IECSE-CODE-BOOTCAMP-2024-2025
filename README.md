@@ -8,3 +8,4 @@ Content provided in the repository:
 3. Week 3 - Strings and Binary Search
 4. Week 4 - Linked Lists
 5. Week 5 - Stacks
+6. Week 6 - Queues
