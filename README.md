@@ -9,3 +9,4 @@ Content provided in the repository:
 4. [Week 4 - Linked Lists](https://github.com/weird-akshat)
 5. [Week 5 - Stacks](https://github.com/Roonil03)
 6. [Week 6 - Queues](https://github.com/Devarsh-Shah1012)
+7. [Week 7 - Graphs](https://github.com/umairSuleman)
